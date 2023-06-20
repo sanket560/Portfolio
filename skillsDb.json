@@ -5,11 +5,6 @@
         "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
     },
     {
-        "id" : 2,
-        "name": "Vite",
-        "icon": "/src/Images/vite.png"
-    },
-    {
         "id" : 3,
         "name": "NodeJS",
         "icon": "https://img.icons8.com/fluency/48/node-js.png"

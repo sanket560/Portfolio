@@ -40,7 +40,7 @@ function Experience() {
                     needs and requirements for the website or web application.
                   </p>
                   <p className='text-gray-500'>
-                    •Optimizing the website or application for performance and
+                    • Optimizing the website or application for performance and
                     user experience, such as improving page load speed and
                     mobile responsiveness.
                   </p>
@@ -77,7 +77,7 @@ function Experience() {
                     (IoT).
                   </p>
                   <p className='text-gray-500'>
-                    •Identify and discuss emerging trends in the tech industry,
+                    • Identify and discuss emerging trends in the tech industry,
                     such as edge computing, quantum computing, cybersecurity, or
                     data analytic
                   </p>
