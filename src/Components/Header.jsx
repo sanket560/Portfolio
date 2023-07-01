@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../Images/logo.png'
 function Header() {
   return (
-    <div className='navbar fixed bg-[#0f172a] opacity-95 w-full h-16 border-b text-white flex items-center justify-around gap-40 md:gap-72 z-10'>
+    <div className='navbar fixed bg-[#0f172a] bg-opacity-40 dark:bg-grey-900 dark:bg-opacity-40 backdrop-filter backdrop-blur-lg w-full h-16 border-b text-white flex items-center justify-around gap-40 md:gap-72 z-10'>
       <div className='logo flex items-center'>
         <img className='w-10 h-10 mr-3' src={logo} alt='logo' />
         <p className='text-2xl font-semibold'>Sanket .</p>
