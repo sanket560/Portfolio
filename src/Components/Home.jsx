@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import linkedin from '../Images/linkedin.png'
 import github from '../Images/github-mark-white.png'
 import user from '../Images/home-image.png'
-
+import { Button } from '@mui/material'
 const arrow = {
   marginTop : '-70px'
 }
@@ -37,9 +37,9 @@ function Home() {
               alt=''
             />
           </a>
-          <button className='bg-indigo-400 hover:bg-gray-600 transition duration-500 w-32 py-2 rounded-lg text-white flex-shrink-0'>
+          <Button variant="contained" className=' w-32 h-10 rounded-lg text-white flex-shrink-0'>
            <a href="../sanket_mane___resume.pdf" download="sanket-mane-resume.pdf"> Resume <FontAwesomeIcon icon={faEnvelope} /></a>
-          </button>
+          </Button>
         </div>
         <div className='right_content md:h-2/3 my-4'>
           <img className='md:w-[600px]' src={user} alt='' />
