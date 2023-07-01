@@ -93,6 +93,16 @@
         "id" : 20,
         "name": "Figma",
         "icon": "https://img.icons8.com/color/48/figma--v1.png"
+    },
+    {
+        "id" : 21,
+        "name": "MaterialUI",
+        "icon": "https://img.icons8.com/color/48/000000/material-ui.png"
+    },
+    {
+        "id" : 22,
+        "name": "Vite",
+        "icon": "https://vitejs.dev/logo.svg"
     }
     
 ]
