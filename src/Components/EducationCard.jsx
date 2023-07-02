@@ -2,7 +2,7 @@ import React from 'react'
 
 function EducationCard({img,Course,College,Duration}) {
   return (
-    <div className='flex flex-col md:flex-row bg-indigo-300 text-gray-900 md:w-full w-4/5 md:items-center mx-auto mt-10 rounded-lg overflow-hidden drop-shadow-xl'>
+    <div className='flex flex-col md:flex-row bg-slate-800 text-slate-50 md:w-full w-4/5 md:items-center mx-auto mt-10 rounded-lg overflow-hidden drop-shadow-xl'>
       <div className='w-43 h-43'>
         <img className='md:w-48 md:h-44 w-screen h-52 ' src={img} alt='' />
       </div>
