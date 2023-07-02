@@ -25,7 +25,7 @@ function Contact() {
               to say hello, I will try my best to get back to you!
             </p>
           </div>
-          <div className='form md:w-1/3 mb-10'>
+          <div className='form w-80 md:w-1/3 mb-10'>
             <form
               action='https://formspree.io/f/xvonedlw'
               method='post'
@@ -35,8 +35,8 @@ function Contact() {
                 type='text'
                 name='name'
                 id=''
-                placeholder='Full Name*'
-                className='p-2 rounded-lg outline-none'
+                placeholder='Full Name'
+                className='p-2 rounded-lg outline-none bg-slate-800 text-white'
                 required
               />
               <input
@@ -44,7 +44,7 @@ function Contact() {
                 name='email'
                 id=''
                 placeholder='Email*'
-                className='p-2 rounded-lg outline-none'
+                className='p-2 rounded-lg outline-none bg-slate-800 text-white'
                 required
               />
               <textarea
@@ -53,7 +53,7 @@ function Contact() {
                 placeholder='Message*'
                 cols='30'
                 rows='8'
-                className='p-2 rounded-lg outline-none'
+                className='p-2 rounded-lg outline-none bg-slate-800 text-white'
                 required
               />
               <button
