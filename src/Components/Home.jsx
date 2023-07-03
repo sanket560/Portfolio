@@ -23,8 +23,7 @@ function Home() {
             I'm Sanket Mane
           </p>
           <p className='text-xl md:text-2xl text-gray-400 font-semibold md:font-bold mt-5'>
-            Intern @ WESUPP | Member @ Revolution Software Club | Campus
-            Ambassador @ Teachnook | Java enthusiast | Web Dev | UI | Open
+            Intern @ WESUPP | Member @ Revolution Software Club | Java enthusiast | Web Dev | UI | Open
             source enthusiast | B. Tech (3rd yr) | VU'25 | JSCOE'22
           </p>
           <a href='https://www.github.com/sanket560'>
