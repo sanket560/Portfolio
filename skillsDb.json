@@ -103,6 +103,11 @@
         "id" : 22,
         "name": "Vite",
         "icon": "https://vitejs.dev/logo.svg"
+    },
+    {
+        "id" : 23,
+        "name": "Firebase",
+        "icon": "https://img.icons8.com/color/48/firebase.png"
     }
     
 ]
