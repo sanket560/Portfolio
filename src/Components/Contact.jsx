@@ -43,14 +43,14 @@ function Contact() {
                 type='email'
                 name='email'
                 id=''
-                placeholder='Email*'
+                placeholder='Email'
                 className='p-2 rounded-lg outline-none bg-slate-800 text-white'
                 required
               />
               <textarea
                 name='message'
                 id=''
-                placeholder='Message*'
+                placeholder='Message'
                 cols='30'
                 rows='8'
                 className='p-2 rounded-lg outline-none bg-slate-800 text-white'
