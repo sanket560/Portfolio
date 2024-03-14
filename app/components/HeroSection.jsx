@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -44,7 +45,7 @@ const Home = () => {
           </div>
         </div>
         <div className='right_content flex items-center md:h-2/3 my-4'>
-          <img
+          <Image
             className='md:w-[400px] w-[300px]'
             src='/Images/pofilepic.png'
             alt=''

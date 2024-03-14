@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
@@ -6,7 +7,7 @@ const ProjectCard = ({img ,title, desc, sourceCodeLink, liveLink}) => {
   return (
     <div className='bg-slate-800 w-96 p-4 rounded-lg md:h-72'>
       <div className='group flex justify-center text-center relative overflow-hidden rounded-md cursor-pointer'>
-        <img
+        <Image
           className='rounded-lg object-cover ease-in-out duration-500 group-hover:rotate-6 group-hover:scale-125'
           src= {img}
           alt=''

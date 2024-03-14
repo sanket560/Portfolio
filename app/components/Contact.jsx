@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 function Contact() {
   return (
     <>
@@ -11,7 +13,10 @@ function Contact() {
         </div>
         <div className='flex flex-col md:flex-row items-center justify-center md:mt-10'>
           <div className='contact md:w-1/3 md:mb-10'>
-            <img src='/Images/contact.png' alt='' />
+            <Image
+              src='/Images/contact.png'
+              alt='Picture of contact'
+            />
             <p className='text-white px-6 text-justify pb-5'>
               My inbox is always open. Whether you have a question or just want
               to say hello, I will try my best to get back to you!
