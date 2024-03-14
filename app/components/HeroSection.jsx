@@ -19,14 +19,15 @@ const Home = () => {
             Hi There,
           </p>
           <p className='text-4xl md:text-6xl font-bold text-slate-100'>
-            I'm Sanket Mane
+            I&apos;m Sanket Mane
           </p>
           <p className='text-xl md:text-2xl text-gray-400 font-semibold md:font-bold mt-5'>
             MERN Stack Developer | President - @ Revolution Software Development
             Club, VU | Placement Coordinator @ VU | Ex - Intern @ WESUPP | Java
             enthusiast | Web Dev | UI | Open source enthusiast | B. Tech (3rd
-            yr) | VU'25 | JSCOE'22
+            yr) | VU&apos;25 | JSCOE&apos;22
           </p>
+
           <div className='flex items-center gap-2 mt-3'>
             <a
               href='https://www.github.com/sanket560'
