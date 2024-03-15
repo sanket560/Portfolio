@@ -50,7 +50,8 @@ const Home = () => {
             className='md:w-[400px] w-[300px]'
             src='/Images/pofilepic.png'
             alt=''
-            srcSet=''
+            width={400}
+            height={300 * (3 / 4)}
           />
         </div>
       </div>

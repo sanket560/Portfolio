@@ -8,7 +8,7 @@ const Skills = () => {
       <div className='md:w-4/5 md:mt-5 md:h-[100vh] mx-auto'>
         <div className='flex flex-col items-center pt-4'>
           <p className='text-3xl font-bold text-white'>
-            Skills
+            Tech Stack
           </p>
           <p className='w-20 border-b-4 border-indigo-400 mt-3'></p>
         </div>

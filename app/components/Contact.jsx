@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 function Contact() {
   return (
@@ -16,6 +16,8 @@ function Contact() {
             <Image
               src='/Images/contact.png'
               alt='Picture of contact'
+              width={300}
+              height={150}
             />
             <p className='text-white px-6 text-justify pb-5'>
               My inbox is always open. Whether you have a question or just want
