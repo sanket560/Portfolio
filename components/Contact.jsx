@@ -1,63 +1,84 @@
+"use client";
 import Image from "next/image";
+import toast from "react-hot-toast";
 
 function Contact() {
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    try {
+      const response = await fetch("/api", {
+        method: "post",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error(`response status: ${response.status}`);
+      }
+      
+      const responseData = await response.json();
+      toast.success(responseData["message"]);
+      
+    } catch (err) {
+      console.error(err);
+      toast.error("Error, please try resubmitting the form");
+    }
+  }
+
   return (
     <>
       <div id='contact' className='h-14'></div>
-      <div className='md:w-4/5 h-screen mx-auto flex flex-col items-center justify-center'>
+      <div className='md:w-4/5 h-screen mx-auto flex md:mt-0 mt-28 mb-24 flex-col items-center justify-center'>
         <div className='flex flex-col items-center pt-4'>
           <p className='text-3xl font-bold text-white flex items-center'>
             Contact
           </p>
           <p className='w-32 border-b-4 border-indigo-400 mt-3'></p>
         </div>
-        <div className='flex flex-col md:flex-row items-center justify-center md:mt-10'>
-          <div className='contact md:w-1/3 md:mb-10'>
-            <Image
-              src='/Images/contact.png'
-              alt='Picture of contact'
-              width={300}
-              height={150}
-            />
-            <p className='text-white px-6 text-justify pb-5'>
+        <p className='text-white text-justify mt-10 pb-4 px-6'>
               My inbox is always open. Whether you have a question or just want
               to say hello, I will try my best to get back to you!
             </p>
-          </div>
-          <div className='form md:w-1/3 mb-10'>
-            <form
-              action='https://formspree.io/f/xvonedlw'
-              method='post'
-              className='flex flex-col gap-4'
-            >
+        <div className='flex flex-col md:flex-row items-center justify-center md:mt-4'>
+            <Image
+              src='/Images/contact.png'
+              alt='Picture of contact'
+              className='w-96 md:h-[350px] md:w-[600px]'
+              width={300}
+              height={400}
+            />
+          <div className='form md:w-[500px] mb-10'>
+            <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
               <input
+                id='name'
                 type='text'
                 name='name'
-                placeholder='Full Name'
-                className='p-2 rounded-lg outline-none bg-slate-800 text-white'
                 required
+                placeholder='Enter Full Name'
+                className='p-2 rounded-lg outline-none bg-slate-800 text-white'
               />
               <input
+                id='email'
                 type='email'
                 name='email'
-                placeholder='Email'
-                className='p-2 rounded-lg outline-none bg-slate-800 text-white'
+                placeholder='Enter Your Email'
                 required
+                className='p-2 rounded-lg outline-none bg-slate-800 text-white'
               />
               <textarea
-                type='text'
+                id='message'
                 name='message'
+                required
                 placeholder='Message'
                 cols='30'
                 rows='8'
                 className='p-2 rounded-lg outline-none bg-slate-800 text-white'
-                required
               />
               <button
                 className='p-2 bg-indigo-400 text-white rounded-lg'
                 type='submit'
               >
-                Submit
+                Send Message
               </button>
             </form>
           </div>
