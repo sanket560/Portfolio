@@ -8,6 +8,23 @@ body {
     text-transform: capitalize;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
-}  
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(129 140 248);
+    border-radius: 6px;
+}
