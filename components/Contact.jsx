@@ -2,10 +2,11 @@
 import Image from "next/image";
 import toast from "react-hot-toast";
 import { useState } from "react";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
 function Contact() {
   const router = useRouter();
+  const [submitting, setSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -14,6 +15,7 @@ function Contact() {
 
   async function handleSubmit(event) {
     event.preventDefault();
+    setSubmitting(true);
     const formData = new FormData(event.target);
     try {
       const response = await fetch("/api", {
@@ -36,10 +38,11 @@ function Contact() {
       const responseData = await response.json();
 
       toast.success(responseData["message"]);
-
     } catch (err) {
       console.error(err);
       toast.error("Error, please try resubmitting the form");
+    } finally {
+      setSubmitting(false); 
     }
   }
 
@@ -107,10 +110,17 @@ function Contact() {
                 onChange={handleChange}
               />
               <button
-                className='p-2 bg-indigo-400 text-white rounded-lg'
+                className='relative h-10 p-2 bg-indigo-400 text-white rounded-lg'
                 type='submit'
+                disabled={submitting}
               >
-                Send Message
+                {submitting ? (
+                  <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+                    <div className='w-6 h-6 border-2 rounded-full border-t-0 animate-spin'></div>
+                  </div>
+                ) : (
+                  <span>Send Message</span>
+                )}
               </button>
             </form>
           </div>
