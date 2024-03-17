@@ -6,8 +6,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: "sanketmmane@gmail.com",
-    pass: "ekej zpxk vvbj zzci",
+    user: process.env.ADMIN_EMAIL,
+    pass: process.env.ADMIN_PASSWORD,
   },
 });
 
@@ -20,7 +20,7 @@ export async function POST(req) {
   try {
     const mail = await transporter.sendMail({
       from: email,
-      to: "sanketmmane@gmail.com",
+      to: process.env.ADMIN_EMAIL,
       replyTo: email,
       subject: `Message from ${name}`,
       text: message,
