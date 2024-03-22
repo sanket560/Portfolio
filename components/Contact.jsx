@@ -132,7 +132,7 @@ function Contact() {
             <p className='text-2xl font-semibold text-white'>
               Make this yours by forking.
             </p>
-            <p>
+            <p className="font-semibold">
               Fork this template on GitHub start building your own portfolio
               website.
             </p>
@@ -146,7 +146,7 @@ function Contact() {
           <Image
             src='/Images/portfolio.png'
             alt='fork img'
-            className='md:w-96 px-3 pt-3 rounded-md'
+            className='md:w-96 px-3 pt-3 pb-4 rounded-3xl'
             width={300}
             height={400}
           />
